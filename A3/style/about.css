@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+.header {
+    background-color: #000;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+.logo {
+    width: 60px;
+}
+
+.main-menu {
+    display: none;
+    gap: 50px;
+}
+
+.main-menu a:hover {
+    color: #dcac36;
+}
+
+.main-menu a.active {
+    color: rgb(220, 172, 54);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(220, 172, 54);
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 1001;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 767px) {
+    .main-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        gap: 25px;
+        z-index: 1000;
+        display: none;
+    }
+
+    .main-menu.active {
+        display: flex;
+    }
+
+    .hamburger i {
+        transition: transform 0.3s ease;
+    }
+
+    .hamburger.active i {
+        transform: rotate(90deg);
+    }
+}
+
+/* Card Styles */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    width: 100%;
+    background-color: #222;
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Main Content Styles */
+.section-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.cards-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+.stat-item span {
+    color: #dcac36;
+}
+
+/* Features Section */
+.features-section {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.feature-item {
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.feature-item img {
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+.footer-upper {
+    background-color: #000;
+    border-top: 1px solid #fff;
+    padding: 3rem 1rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-about {
+    max-width: 300px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.callback-btn {
+    background-color: #dcac36;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.callback-btn:hover {
+    background-color: #b48c28;
+}
+
+.lower-footer {
+    background: rgb(22, 22, 22);
+    color: #666;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .main-menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .card-image {
+        width: 40%;
+        flex-shrink: 0;
+    }
+    
+    .card-content {
+        width: 60%;
+        flex-grow: 1;
+    }
+
+    .stats-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .stat-item {
+        border-right: 1px solid #fff;
+        padding-right: 2rem;
+    }
+
+    .stat-item:last-child {
+        border-right: none;
+    }
+
+    .features-section {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-container {
+        padding: 1rem 4rem;
+    }
+
+    .section-heading {
+        font-size: 2.5rem;
+    }
+}

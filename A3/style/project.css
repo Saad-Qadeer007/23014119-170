@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: black;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.main-menu {
+    display: flex;
+}
+
+.main-menu a {
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.main-menu a:hover {
+    color: rgb(220, 172, 54);
+}
+
+.main-menu a.active {
+    color: rgb(220, 172, 54);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(220, 172, 54);
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Main Section */
+.projects {
+    padding: 40px 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.project-card .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(220, 172, 54);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-card .btn:hover {
+    background-color: rgb(180, 140, 40);
+}
+
+.project-list .project-card .favorite-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: rgb(220, 172, 54);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.project-list .project-card .favorite-btn:hover {
+    background-color: rgb(180, 140, 40);
+}
+
+/* Footer */
+.upper-footer {
+    background-color: black;
+    padding: 40px 20px;
+    border-top: 1px solid white;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-menu,
+.about,
+.social-icons,
+.callback {
+    flex: 1 1 200px;
+}
+
+.footer-menu a {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: rgb(220, 172, 54);
+}
+
+.about .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons p {
+    margin-bottom: 10px;
+}
+
+.icons a {
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: rgb(220, 172, 54);
+}
+
+.callback .btn {
+    padding: 10px 20px;
+    background-color: rgb(220, 172, 54);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.callback .btn:hover {
+    background-color: rgb(180, 140, 40);
+}
+
+.lower-footer {
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+    padding: 15px;
+    color: gray;
+}
+
+/* Mobile devices: max-width 768px */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .main-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        gap: 25px;
+        z-index: 1000;
+    }
+
+    .main-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .hamburger i {
+        transition: transform 0.3s ease;
+    }
+
+    .hamburger.active i {
+        transform: rotate(90deg);
+    }
+
+    .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+
+    .project-list .project-card .favorite-btn {
+        display: none;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .social-icons .icons a {
+        margin-right: 15px;
+    }
+
+    .callback {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Tablets: 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .project-list {
+        justify-content: space-around;
+    }
+
+    .project-card {
+        width: 45%;
+    }
+
+    .footer-container {
+        justify-content: space-around;
+    }
+
+    .callback {
+        width: auto;
+    }
+}
+
+/* Large Screens: 1025px and up */
+@media (min-width: 1025px) {
+    .main-menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .project-card {
+        width: 30%;
+    }
+}
