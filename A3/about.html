@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Real Estate Website - About Page</title>
+</head>
+
+<body class="bg-black text-white font-[Segoe_UI]">
+
+    <!-- header -->
+    <header class="header bg-black border-b border-white relative">
+        <nav class="nav-container flex justify-between items-center px-6 py-4 md:px-16 relative">
+            <div class="logo w-[60px]">
+                <img src="./images/logo.png" alt="Logo">
+            </div>
+            <div class="main-menu hidden md:flex gap-[50px]">
+                <a href="index.html" class="hover:text-[#dcac36]">Home</a>
+                <a href="project.html" class="hover:text-[#dcac36]">Project</a>
+                <a href="About.html" class="hover:text-[#dcac36]">About</a>
+                <a href="Contact.html" class="hover:text-[#dcac36]">Contact</a>
+            </div>
+            <div class="hamburger cursor-pointer text-white text-2xl z-[1001] md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="hero-section"></div>
+        <h2 class="section-heading text-center text-2xl md:text-3xl my-8">About</h2>
+
+        <div class="cards-container w-[90%] mx-auto flex flex-col gap-8">
+            <div class="card flex flex-col gap-5 md:flex-row md:items-start">
+                <div class="card-image w-full md:w-[40%] flex-shrink-0">
+                    <img src="./images/office-1-e3m3DbkO.jpg" alt="Office Image" class="w-full h-auto block">
+                </div>
+                <div class="card-content w-full md:w-[60%] bg-[#222] p-6 flex-grow">
+                    <h3 class="text-xl mb-3">Our Vision</h3>
+                    <p>Our vision is to revolutionize the real estate industry by leveraging innovation and technology to create seamless property experiences for our clients.</p>
+                </div>
+            </div>
+
+            <div class="card flex flex-col gap-5 md:flex-row md:items-start">
+                <div class="card-image w-full md:w-[40%] flex-shrink-0">
+                    <img src="./images/office-1-e3m3DbkO.jpg" alt="Office Image" class="w-full h-auto block">
+                </div>
+                <div class="card-content w-full md:w-[60%] bg-[#222] p-6 flex-grow">
+                    <h3 class="text-xl mb-3">Our Mission</h3>
+                    <p>Our mission is to connect people with their dream properties by offering exceptional real estate solutions tailored to their needs.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="stats-section flex flex-col items-center gap-8 py-12 md:flex-row md:justify-center">
+            <div class="stat-item text-center p-4 md:border-r md:pr-8 last:md:border-r-0">
+                <p>8000 <span class="text-[#dcac36]">CLIENTS</span></p>
+                <p>Proudly serving a huge number of satisfied clients from different nationalities</p>
+            </div>
+            <div class="stat-item text-center p-4 md:border-r md:pr-8 last:md:border-r-0">
+                <p>8000 <span class="text-[#dcac36]">CLIENTS</span></p>
+                <p>Proudly serving a huge number of satisfied clients from different nationalities</p>
+            </div>
+            <div class="stat-item text-center p-4 md:pr-8">
+                <p>8000 <span class="text-[#dcac36]">CLIENTS</span></p>
+                <p>Proudly serving a huge number of satisfied clients from different nationalities</p>
+            </div>
+        </section>
+
+        <section class="features-section flex flex-wrap justify-center gap-8 p-12 md:flex-nowrap">
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-upper bg-black border-t border-white py-12 px-4">
+            <div class="footer-container max-w-[1200px] mx-auto flex flex-wrap gap-8 justify-between">
+                <div class="footer-menu flex flex-col gap-4">
+                    <a href="#" class="hover:text-[#dcac36]">Home</a>
+                    <a href="#" class="hover:text-[#dcac36]">Project</a>
+                    <a href="#" class="hover:text-[#dcac36]">About</a>
+                    <a href="#" class="hover:text-[#dcac36]">Contact</a>
+                </div>
+                <div class="footer-about max-w-[300px]">
+                    <h4 class="text-lg mb-2">How We Are?</h4>
+                    <p>We are a leading real estate company with a commitment to providing the best properties and services to our clients.</p>
+                </div>
+                <div class="footer-social">
+                    <h4 class="text-lg mb-2">Follow Us</h4>
+                    <div class="social-icons flex gap-4 text-2xl">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-cta">
+                    <button class="callback-btn bg-[#dcac36] text-white px-6 py-3 rounded hover:bg-[#b48c28]">Request For Callback</button>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer bg-[#161616] text-[#666] text-center py-5">
+            <p>&copy; <span id="copyright-year"></span> Real Estate Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="javascript/index.js"></script>
+</body>
+</html>

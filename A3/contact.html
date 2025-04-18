@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Real Estate Website - Contact Page</title>
+</head>
+
+<body class="bg-black text-white font-['Segoe UI','Tahoma','Geneva','Verdana','sans-serif']">
+    <!-- header -->
+    <header class="header bg-black border-b border-white relative">
+        <nav class="nav-container flex justify-between items-center py-4 px-6 lg:px-16 relative z-20">
+            <div class="logo w-[60px]">
+                <img src="./images/logo.png" alt="Logo" class="max-w-full h-auto">
+            </div>
+            <div class="main-menu hidden lg:flex gap-[50px]">
+                <a href="index.html" class="hover:text-[#dcac36]">Home</a>
+                <a href="project.html" class="hover:text-[#dcac36]">Project</a>
+                <a href="About.html" class="hover:text-[#dcac36]">About</a>
+                <a href="Contact.html" class="hover:text-[#dcac36]">Contact</a>
+            </div>
+            <label for="menu-toggle" class="hamburger cursor-pointer text-white text-[1.5rem] z-[1001] block lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="main-content bg-black py-8">
+        <div class="hero-section"></div>
+        <h2 class="section-heading text-center text-2xl md:text-[2.5rem] font-bold my-8">Contact</h2>
+
+        <section class="contact-form w-4/5 mx-auto text-center max-w-[1200px]">
+            <h1 class="text-[1.5rem] mb-4">Request a Callback</h1>
+            <p class="form-description mb-8 text-[#ccc]">Submit your contact information and any questions you have in mind and we will happily assist you.</p>
+            <form class="form-container flex flex-wrap gap-4 justify-center">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required
+                    class="w-full md:w-[48%] p-3 rounded bg-[#333] border border-[#444] text-white">
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required
+                    class="w-full md:w-[48%] p-3 rounded bg-[#333] border border-[#444] text-white">
+                <input type="tel" id="phone" name="phone" placeholder="Phone" required
+                    class="w-full md:w-[48%] p-3 rounded bg-[#333] border border-[#444] text-white">
+                <input type="email" id="email" name="email" placeholder="Email" required
+                    class="w-full md:w-[48%] p-3 rounded bg-[#333] border border-[#444] text-white">
+                <textarea id="message" name="message" rows="4" placeholder="Message" required
+                    class="w-full p-3 rounded bg-[#333] border border-[#444] text-white resize-vertical min-h-[120px]"></textarea>
+                <button type="submit"
+                    class="submit-btn bg-[#dcac36] text-white p-3 px-8 border-none rounded cursor-pointer w-full hover:bg-[#b48c28]">Submit</button>
+            </form>
+        </section>
+
+        <section class="contact-info w-4/5 mx-auto my-12 hidden md:flex justify-between">
+            <div class="info-item w-full md:w-[30%] text-center p-4 flex flex-col items-center gap-2">
+                <i class="fa-solid fa-phone text-[1.5rem] text-[#dcac36]"></i>
+                <p>+92 3438377255</p>
+            </div>
+            <div class="info-item w-full md:w-[30%] text-center p-4 flex flex-col items-center gap-2">
+                <i class="fa-solid fa-envelope text-[1.5rem] text-[#dcac36]"></i>
+                <p>saadqadeer1234@gmail.com</p>
+            </div>
+            <div class="info-item w-full md:w-[30%] text-center p-4 flex flex-col items-center gap-2">
+                <i class="fa-solid fa-location-dot text-[1.5rem] text-[#dcac36]"></i>
+                <p>Punjab, Pakistan</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="upper-footer bg-black border-t border-white py-12 px-4">
+            <div class="footer-content w-[90%] mx-auto flex justify-between flex-col md:flex-row md:gap-0 gap-8">
+                <div class="footer-menu flex flex-col gap-[15px] order-1">
+                    <a href="#" class="hover:text-[#dcac36]">Home</a>
+                    <a href="#" class="hover:text-[#dcac36]">Project</a>
+                    <a href="#" class="hover:text-[#dcac36]">About</a>
+                    <a href="#" class="hover:text-[#dcac36]">Contact</a>
+                </div>
+                <div class="footer-about max-w-[300px] order-2">
+                    <p class="footer-title font-bold">How We Are?</p>
+                    <p>We are a leading real estate company with a commitment to providing the best properties and services to our clients.</p>
+                </div>
+                <div class="social-icons flex flex-col order-3">
+                    <p>Follow Us</p>
+                    <div class="icons flex gap-4 text-[1.5rem]">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="callback order-4">
+                    <p class="footer-title font-bold">Follow Us</p>
+                    <button class="callback-button bg-[#dcac36] text-white py-3 px-6 border-none rounded cursor-pointer hover:bg-[#b48c28]">Request For Callback</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower-footer bg-[#161616] text-center p-4 text-[#666]">
+            <p>&copy; <span id="copyright-year"></span> Real Estate Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

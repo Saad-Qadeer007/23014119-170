@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Real Estate - Commercial Properties</title>
+</head>
+<body class="font-['Segoe_UI','Tahoma','Geneva','Verdana',sans-serif] leading-relaxed bg-black text-white">
+
+    <!-- Header -->
+    <header class="header bg-black border-b border-white">
+        <nav class="nav-container flex justify-between items-center p-4 md:px-16">
+            <div class="logo w-[60px]">
+                <img src="./images/logo.png" alt="Company Logo" class="w-full h-auto block">
+            </div>
+            <div class="main-menu hidden md:flex gap-[50px]">
+                <a href="index.html" class="text-white hover:text-[rgb(220,172,54)] transition-colors">Home</a>
+                <a href="project.html" class="text-white hover:text-[rgb(220,172,54)] transition-colors">Project</a>
+                <a href="about.html" class="text-white hover:text-[rgb(220,172,54)] transition-colors">About</a>
+                <a href="contact.html" class="text-white hover:text-[rgb(220,172,54)] transition-colors">Contact</a>
+            </div>
+            <div class="hamburger text-white text-[1.5rem] cursor-pointer md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="commercial-main bg-white p-8 md:p-16">
+        <section class="commercial-section px-0 md:px-8">
+            <h2 class="section-title text-center text-[2rem] md:text-[2.5rem] text-black mb-8 md:mb-12">Commercial Properties</h2>
+
+            <button id="sortCommercialPriceBtn" class="bg-[rgb(220,172,54)] text-white px-4 py-2 rounded cursor-pointer transition-colors hover:bg-[rgb(180,140,40)] my-2">Sort by Price</button>
+
+            <div class="properties-grid flex flex-wrap gap-6 justify-center max-w-[1200px] mx-auto" id="commercialGrid">
+                <!-- Property 1 -->
+                <div class="property-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 flex-1 max-w-[350px] hover:-translate-y-1.5" data-price="1000000">
+                    <img src="./images/commercial1-Tqs1DzEB.jpg" alt="Office Space" class="w-full h-48 object-cover">
+                    <div class="card-details p-6">
+                        <h3 class="text-[1.25rem] text-black mb-2">Office Space 1</h3>
+                        <p class="price-tag text-gray-600 mb-4">$1,000,000</p>
+                        <a href="booking.html" class="action-btn bg-[rgb(220,172,54)] text-white px-4 py-2 rounded w-full inline-block text-center cursor-pointer transition-colors hover:bg-[rgb(180,140,40)]">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 flex-1 max-w-[350px] hover:-translate-y-1.5" data-price="1500000">
+                    <img src="./images/commercial2-8-79nYv8.jpeg" alt="Retail Space" class="w-full h-48 object-cover">
+                    <div class="card-details p-6">
+                        <h3 class="text-[1.25rem] text-black mb-2">Retail Space 2</h3>
+                        <p class="price-tag text-gray-600 mb-4">$1,500,000</p>
+                        <a href="booking.html" class="action-btn bg-[rgb(220,172,54)] text-white px-4 py-2 rounded w-full inline-block text-center cursor-pointer transition-colors hover:bg-[rgb(180,140,40)]">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 flex-1 max-w-[350px] hover:-translate-y-1.5" data-price="800000">
+                    <img src="./images/commercial4-rI0PCXHo.jpg" alt="Warehouse" class="w-full h-48 object-cover">
+                    <div class="card-details p-6">
+                        <h3 class="text-[1.25rem] text-black mb-2">Warehouse 3</h3>
+                        <p class="price-tag text-gray-600 mb-4">$800,000</p>
+                        <a href="booking.html" class="action-btn bg-[rgb(220,172,54)] text-white px-4 py-2 rounded w-full inline-block text-center cursor-pointer transition-colors hover:bg-[rgb(180,140,40)]">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-black border-t border-white">
+        <div class="footer-top p-12">
+            <div class="footer-content max-w-[1200px] mx-auto flex flex-wrap md:flex-nowrap gap-8 justify-between">
+                <div class="footer-nav flex flex-col gap-4">
+                    <a href="index.html" class="text-white hover:text-[rgb(220,172,54)] transition-colors">Home</a>
+                    <a href="project.html" class="text-white hover:text-[rgb(220,172,54)] transition-colors">Project</a>
+                    <a href="about.html" class="text-white hover:text-[rgb(220,172,54)] transition-colors">About</a>
+                    <a href="contact.html" class="text-white hover:text-[rgb(220,172,54)] transition-colors">Contact</a>
+                </div>
+                <div class="company-info max-w-[300px] text-gray-300">
+                    <h4 class="text-white mb-2">About Us</h4>
+                    <p>Leading real estate company committed to excellence in property services.</p>
+                </div>
+                <div class="social-links">
+                    <h4 class="text-white mb-4">Connect With Us</h4>
+                    <div class="social-icons flex gap-4 text-[1.5rem]">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="callback-section">
+                    <button class="callback-btn bg-[rgb(220,172,54)] text-white px-6 py-3 rounded cursor-pointer transition-colors hover:bg-[rgb(180,140,40)]">Request Callback</button>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer bg-[rgb(22,22,22)] text-gray-500 text-center py-5">
+            <p>&copy; <span id="copyright-year"></span> Real Estate Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+     <script src="javascript/index.js"></script>
+</body>
+</html>

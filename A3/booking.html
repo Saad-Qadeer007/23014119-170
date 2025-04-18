@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Booking Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-gray-800 text-white py-2">
+        <nav class="flex justify-between items-center px-5">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo" class="h-10">
+            </div>
+            <label for="menu-toggle" class="hamburger flex flex-col space-y-1 cursor-pointer md:hidden">
+                <span class="block w-7 h-1 bg-white rounded"></span>
+                <span class="block w-7 h-1 bg-white rounded"></span>
+                <span class="block w-7 h-1 bg-white rounded"></span>
+            </label>
+            <div class="main-menu hidden md:flex space-x-5">
+                <a href="index.html" class="hover:text-blue-500">Home</a>
+                <a href="project.html" class="hover:text-blue-500">Project</a>
+                <a href="about.html" class="hover:text-blue-500">About</a>
+                <a href="contact.html" class="hover:text-blue-500">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Price Table Section -->
+    <section class="py-12 px-5">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Property Pricing</h2>
+        <div class="overflow-x-auto">
+            <table class="w-full bg-white rounded-lg shadow-md border-collapse min-w-full">
+                <thead class="bg-gray-700 text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left">Property Type</th>
+                        <th class="px-6 py-3 text-left">Size (sqft)</th>
+                        <th class="px-6 py-3 text-left">Price</th>
+                        <th class="px-6 py-3 text-left">Availability</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-700">
+                    <!-- Villa Properties -->
+                    <tr class="hover:bg-gray-100">
+                        <td class="px-6 py-3">Luxury Villa</td>
+                        <td class="px-6 py-3">3,500</td>
+                        <td class="px-6 py-3">$1,250,000</td>
+                        <td class="px-6 py-3">
+                            <span class="inline-block py-1 px-3 bg-green-100 text-green-600 rounded-full text-sm">Available</span>
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-50 hover:bg-gray-100">
+                        <td class="px-6 py-3">Modern Villa</td>
+                        <td class="px-6 py-3">2,800</td>
+                        <td class="px-6 py-3">$950,000</td>
+                        <td class="px-6 py-3">
+                            <span class="inline-block py-1 px-3 bg-green-100 text-green-600 rounded-full text-sm">Available</span>
+                        </td>
+                    </tr>
+
+                    <!-- Apartment Properties -->
+                    <tr class="hover:bg-gray-100">
+                        <td class="px-6 py-3">Luxury Apartment</td>
+                        <td class="px-6 py-3">1,800</td>
+                        <td class="px-6 py-3">$650,000</td>
+                        <td class="px-6 py-3">
+                            <span class="inline-block py-1 px-3 bg-red-100 text-red-600 rounded-full text-sm">Sold Out</span>
+                        </td>
+                    </tr>
+                    <tr class="bg-gray-50 hover:bg-gray-100">
+                        <td class="px-6 py-3">Modern Apartment</td>
+                        <td class="px-6 py-3">1,500</td>
+                        <td class="px-6 py-3">$450,000</td>
+                        <td class="px-6 py-3">
+                            <span class="inline-block py-1 px-3 bg-green-100 text-green-600 rounded-full text-sm">Available</span>
+                        </td>
+                    </tr>
+
+                    <!-- Commercial Properties -->
+                    <tr class="hover:bg-gray-100">
+                        <td class="px-6 py-3">Commercial Space</td>
+                        <td class="px-6 py-3">5,000</td>
+                        <td class="px-6 py-3">$2,500,000</td>
+                        <td class="px-6 py-3">
+                            <span class="inline-block py-1 px-3 bg-yellow-100 text-yellow-600 rounded-full text-sm">Limited</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <main class="flex justify-center mt-10">
+        <section class="bg-white p-8 rounded-lg shadow-md w-full max-w-md mx-5">
+            <h2 class="text-2xl font-semibold text-center mb-6">Book Your Dream Property</h2>
+            <form class="space-y-6">
+                <div class="form-group">
+                    <label for="property" class="font-bold">Select Property:</label>
+                    <select id="property" name="property" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        <option value="" disabled selected>Select a property</option>
+                        <optgroup label="Villa">
+                            <option value="luxury-villa">Luxury Villa</option>
+                            <option value="modern-villa">Modern Villa</option>
+                            <option value="cozy-villa">Cozy Villa</option>
+                        </optgroup>
+                        <optgroup label="Apartment">
+                            <option value="luxury-apartment">Luxury Apartment</option>
+                            <option value="modern-apartment">Modern Apartment</option>
+                            <option value="cozy-apartment">Cozy Apartment</option>
+                        </optgroup>
+                        <optgroup label="Commercial">
+                            <option value="luxury-commercial">Luxury Commercial</option>
+                            <option value="modern-commercial">Modern Commercial</option>
+                            <option value="cozy-commercial">Cozy Commercial</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullname" class="font-bold">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="font-bold">Email Address:</label>
+                    <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="font-bold">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div class="form-group">
+                    <label for="payment" class="font-bold">Payment Method:</label>
+                    <select id="payment" name="payment" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        <option value="" disabled selected>Select Payment Method</option>
+                        <option value="credit">Credit Card</option>
+                        <option value="bank">Bank Transfer</option>
+                        <option value="cash">Cash on Visit</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="w-full p-3 bg-green-500 text-white rounded-lg hover:bg-green-600">Confirm Booking</button>
+            </form>
+
+            <!-- Total Buyers Display -->
+            <p id="total-buyers" class="text-center text-green-500 font-semibold mt-6">Properties Sold: 1500</p>
+        </section>
+    </main>
+
+    <div class="bg-gray-800 text-center text-gray-500 py-4 mt-10">
+        <p>&copy; <span id="copyright-year"></span> Real Estate Company. All rights reserved.</p>
+    </div>
+
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

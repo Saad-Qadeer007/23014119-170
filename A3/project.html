@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website - Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amber: {
+                            500: 'rgb(220, 172, 54)',
+                            600: 'rgb(180, 140, 40)'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white font-sans">
+    <header>
+        <nav class="navbar flex justify-between items-center p-4 bg-black border-b border-white relative">
+            <div class="logo">
+                <img src="./images/logo.png" alt="Logo" class="w-[60px]">
+            </div>
+            <div class="main-menu hidden md:flex">
+                <a href="index.html" class="mx-5 text-white hover:text-amber-500 no-underline transition-colors duration-300">Home</a>
+                <a href="project.html" class="mx-5 text-white hover:text-amber-500 no-underline transition-colors duration-300">Project</a>
+                <a href="About.html" class="mx-5 text-white hover:text-amber-500 no-underline transition-colors duration-300">About</a>
+                <a href="Contact.html" class="mx-5 text-white hover:text-amber-500 no-underline transition-colors duration-300">Contact</a>
+            </div>
+            <div class="hamburger md:hidden text-white cursor-pointer z-[1001]">
+                <i class="fa-solid fa-bars text-2xl transition-transform duration-300"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects py-10 px-5">
+            <h2 class="text-center mb-8 text-3xl">Our Projects</h2>
+            <div class="container mx-auto">
+                <div class="project-list flex flex-wrap justify-center gap-5" id="projectList">
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="upper-footer bg-black py-10 px-5 border-t border-white">
+            <div class="footer-container max-w-6xl mx-auto flex flex-wrap justify-between gap-5">
+                <div class="footer-menu flex-1 min-w-[200px]">
+                    <a href="#" class="block mb-2 text-white hover:text-amber-500 no-underline transition-colors duration-300">Home</a>
+                    <a href="#" class="block mb-2 text-white hover:text-amber-500 no-underline transition-colors duration-300">Project</a>
+                    <a href="#" class="block mb-2 text-white hover:text-amber-500 no-underline transition-colors duration-300">About</a>
+                    <a href="#" class="block mb-2 text-white hover:text-amber-500 no-underline transition-colors duration-300">Contact</a>
+                </div>
+                <div class="about flex-1 min-w-[200px]">
+                    <p class="title font-bold mb-2">Who We Are?</p>
+                    <p>We are a leading real estate company committed to providing the best properties and services to our clients.</p>
+                </div>
+                <div class="social-icons flex-1 min-w-[200px]">
+                    <p class="mb-2">Follow Us</p>
+                    <div class="icons flex gap-3">
+                        <a href="#" class="text-white text-xl hover:text-amber-500 transition-colors duration-300"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white text-xl hover:text-amber-500 transition-colors duration-300"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-white text-xl hover:text-amber-500 transition-colors duration-300"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white text-xl hover:text-amber-500 transition-colors duration-300"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="callback flex-1 min-w-[200px]">
+                    <p class="mb-2">Follow Us</p>
+                    <button class="btn bg-amber-500 text-white px-5 py-2 rounded hover:bg-amber-600 transition-colors duration-300">
+                        Request For Callback
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower-footer bg-[#161616] text-gray-500 text-center py-4">
+            <p>&copy; <span id="copyright-year"></span> Real Estate Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="javascript/index.js"></script>
+    </script>
+</body>
+</html>

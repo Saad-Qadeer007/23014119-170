@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate - Apartments</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white font-sans">
+
+    <!-- Header -->
+    <header class="header bg-black border-b border-white">
+        <nav class="nav-container flex justify-between items-center px-6 py-4 lg:px-16">
+            <div class="logo w-[60px]">
+                <img src="./images/logo.png" alt="Logo">
+            </div>
+            <div class="main-menu hidden gap-[50px] md:flex">
+                <a href="index.html" class="hover:text-[#dcac36]">Home</a>
+                <a href="project.html" class="hover:text-[#dcac36]">Project</a>
+                <a href="about.html" class="hover:text-[#dcac36]">About</a>
+                <a href="contact.html" class="hover:text-[#dcac36]">Contact</a>
+            </div>
+            <div class="hamburger text-white text-2xl cursor-pointer md:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="apartment-section bg-white px-6 py-10 lg:py-16 lg:px-8">
+            <h2 class="section-title text-2xl text-center text-black mb-8">Apartments</h2>
+
+            <!-- Sort by Price Button -->
+            <button id="sortApartmentPriceBtn"
+                class="bg-[#dcac36] text-white px-4 py-2 rounded mb-4 hover:bg-[#b48c28] transition">
+                Sort by Price
+            </button>
+
+            <!-- Apartment Grid -->
+            <div class="apartment-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1200px] mx-auto"
+                id="apartmentGrid">
+
+                <!-- Apartment 1 -->
+                <div class="apartment-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                    data-price="300000">
+                    <img src="/images/Apartment-rsK66RvG.jpg" alt="Luxury Apartment" class="w-full h-48 object-cover">
+                    <div class="card-content p-4">
+                        <h3 class="text-xl text-black mb-2">Luxury Apartment 1</h3>
+                        <p class="price text-gray-600 mb-4">$300,000</p>
+                        <a href="booking.html"
+                            class="booking-btn bg-[#dcac36] text-white px-4 py-2 rounded block text-center hover:bg-[#b48c28] transition">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Apartment 2 -->
+                <div class="apartment-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                    data-price="450000">
+                    <img src="./images/apartemn5-3th3k94E.jpg" alt="Modern Apartment" class="w-full h-48 object-cover">
+                    <div class="card-content p-4">
+                        <h3 class="text-xl text-black mb-2">Modern Apartment 2</h3>
+                        <p class="price text-gray-600 mb-4">$450,000</p>
+                        <a href="booking.html"
+                            class="booking-btn bg-[#dcac36] text-white px-4 py-2 rounded block text-center hover:bg-[#b48c28] transition">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Apartment 3 -->
+                <div class="apartment-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                    data-price="400000">
+                    <img src="/images/Apartment-rsK66RvG.jpg" alt="Cozy Apartment" class="w-full h-48 object-cover">
+                    <div class="card-content p-4">
+                        <h3 class="text-xl text-black mb-2">Cozy Apartment 3</h3>
+                        <p class="price text-gray-600 mb-4">$400,000</p>
+                        <a href="booking.html"
+                            class="booking-btn bg-[#dcac36] text-white px-4 py-2 rounded block text-center hover:bg-[#b48c28] transition">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Apartment 4 -->
+                <div class="apartment-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                    data-price="500000">
+                    <img src="/images/Apartment-rsK66RvG.jpg" alt="Spacious Apartment" class="w-full h-48 object-cover">
+                    <div class="card-content p-4">
+                        <h3 class="text-xl text-black mb-2">Spacious Apartment 4</h3>
+                        <p class="price text-gray-600 mb-4">$500,000</p>
+                        <a href="booking.html"
+                            class="booking-btn bg-[#dcac36] text-white px-4 py-2 rounded block text-center hover:bg-[#b48c28] transition">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Apartment 5 -->
+                <div class="apartment-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                    data-price="550000">
+                    <img src="./images/apartemn5-3th3k94E.jpg" alt="Elegant Apartment" class="w-full h-48 object-cover">
+                    <div class="card-content p-4">
+                        <h3 class="text-xl text-black mb-2">Elegant Apartment 5</h3>
+                        <p class="price text-gray-600 mb-4">$550,000</p>
+                        <a href="booking.html"
+                            class="booking-btn bg-[#dcac36] text-white px-4 py-2 rounded block text-center hover:bg-[#b48c28] transition">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Apartment 6 -->
+                <div class="apartment-card bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1"
+                    data-price="600000">
+                    <img src="/images/Apartment-rsK66RvG.jpg" alt="Stylish Apartment" class="w-full h-48 object-cover">
+                    <div class="card-content p-4">
+                        <h3 class="text-xl text-black mb-2">Stylish Apartment 6</h3>
+                        <p class="price text-gray-600 mb-4">$600,000</p>
+                        <a href="booking.html"
+                            class="booking-btn bg-[#dcac36] text-white px-4 py-2 rounded block text-center hover:bg-[#b48c28] transition">Book
+                            Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-upper bg-black border-t border-white px-6 py-10">
+            <div class="footer-container max-w-[1200px] mx-auto flex flex-wrap gap-6 justify-between md:flex-nowrap">
+                <div class="footer-menu flex flex-col gap-4">
+                    <a href="index.html" class="hover:text-[#dcac36]">Home</a>
+                    <a href="project.html" class="hover:text-[#dcac36]">Project</a>
+                    <a href="about.html" class="hover:text-[#dcac36]">About</a>
+                    <a href="contact.html" class="hover:text-[#dcac36]">Contact</a>
+                </div>
+                <div class="company-info max-w-[300px] text-gray-400">
+                    <h4 class="font-semibold mb-2 text-white">How We Are?</h4>
+                    <p>We are a leading real estate company with a commitment to providing the best properties and
+                        services to our clients.</p>
+                </div>
+                <div class="social-links">
+                    <h4 class="font-semibold mb-2 text-white">Follow Us</h4>
+                    <div class="social-icons flex gap-4 text-2xl">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="callback-section">
+                    <button
+                        class="callback-btn bg-[#dcac36] text-white px-4 py-2 rounded hover:bg-[#b48c28] transition">Request
+                        For Callback</button>
+                </div>
+            </div>
+        </div>
+        <div class="lower-footer bg-[#161616] text-gray-500 text-center py-5">
+            <p>&copy; <span id="copyright-year"></span> Real Estate Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Sort by Price Script -->
+    <script src="javascript/index.js"></script>
+
+
+</body>
+
+</html>
